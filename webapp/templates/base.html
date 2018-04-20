@@ -1,0 +1,16 @@
+{% extends "bootstrap/base.html" %}
+
+<!-- disableing bootstrap3 in favor of bootstrap 4 --!>
+{% block scripts %}
+    <scripts src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></scripts>
+    <scripts src="{{url_for('static', filename='js/bootstrap.min.js')}}"></scripts>
+    <scripts src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></scripts>
+{% endblock %}
+
+{% block styles %}
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap.grid.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap.reboot.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bs-callout.css')}}" rel="stylesheet">
+{% endblock %}
+
